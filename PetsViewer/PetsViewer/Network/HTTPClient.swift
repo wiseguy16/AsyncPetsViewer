@@ -36,20 +36,5 @@ extension HTTPClient {
     
   }
   
-//  // MARK: - Helper methods
-//  private func makeUrlFrom(endpointType: EndpointType) -> URL? {
-//    guard let endpoint = makeEndpointWithType(endpointType) else { return nil }
-//    var urlComponents = URLComponents()
-//    urlComponents.scheme = endpoint.scheme
-//    urlComponents.host = endpoint.host
-//    urlComponents.path = endpoint.path
-//    if let queries = endpoint.queryItems {
-//      urlComponents.queryItems = queries.map { (key, value) -> URLQueryItem in
-//        URLQueryItem(name: key, value: String(value))
-//      }
-//    }
-//    return urlComponents.url
-//  }
-  
 }
 

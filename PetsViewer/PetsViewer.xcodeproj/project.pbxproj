@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A01297F295CDF1F002E10B9 /* PetsViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01297E295CDF1F002E10B9 /* PetsViewerApp.swift */; };
-		4A012981295CDF1F002E10B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A012980295CDF1F002E10B9 /* ContentView.swift */; };
 		4A012983295CDF22002E10B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A012982295CDF22002E10B9 /* Assets.xcassets */; };
 		4A012986295CDF22002E10B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A012985295CDF22002E10B9 /* Preview Assets.xcassets */; };
 		4A012990295CDF23002E10B9 /* PetsViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01298F295CDF23002E10B9 /* PetsViewerTests.swift */; };
@@ -48,7 +47,6 @@
 /* Begin PBXFileReference section */
 		4A01297B295CDF1F002E10B9 /* PetsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A01297E295CDF1F002E10B9 /* PetsViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewerApp.swift; sourceTree = "<group>"; };
-		4A012980295CDF1F002E10B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A012982295CDF22002E10B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A012985295CDF22002E10B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A01298B295CDF23002E10B9 /* PetsViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetsViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				4A01297E295CDF1F002E10B9 /* PetsViewerApp.swift */,
-				4A012980295CDF1F002E10B9 /* ContentView.swift */,
 				4A0129A8295CDF7C002E10B9 /* Models */,
 				4A0129A9295CDF87002E10B9 /* Views */,
 				4A0129AA295CDF92002E10B9 /* ViewModels */,
@@ -333,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A012981295CDF1F002E10B9 /* ContentView.swift in Sources */,
 				4A0129C1295CE02E002E10B9 /* PetsGridView.swift in Sources */,
 				4A0129B8295CE01B002E10B9 /* PetViewModel.swift in Sources */,
 				4A0129BF295CE02E002E10B9 /* ImageLoadView.swift in Sources */,
