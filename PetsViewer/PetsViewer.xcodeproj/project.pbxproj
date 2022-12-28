@@ -14,6 +14,18 @@
 		4A012990295CDF23002E10B9 /* PetsViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01298F295CDF23002E10B9 /* PetsViewerTests.swift */; };
 		4A01299A295CDF23002E10B9 /* PetsViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A012999295CDF23002E10B9 /* PetsViewerUITests.swift */; };
 		4A01299C295CDF23002E10B9 /* PetsViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01299B295CDF23002E10B9 /* PetsViewerUITestsLaunchTests.swift */; };
+		4A0129AF295CDFCF002E10B9 /* Font+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129AD295CDFCF002E10B9 /* Font+ext.swift */; };
+		4A0129B0295CDFCF002E10B9 /* Image+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129AE295CDFCF002E10B9 /* Image+ext.swift */; };
+		4A0129B4295CE00F002E10B9 /* PuppyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129B1295CE00E002E10B9 /* PuppyService.swift */; };
+		4A0129B5295CE00F002E10B9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129B2295CE00E002E10B9 /* Endpoint.swift */; };
+		4A0129B6295CE00F002E10B9 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129B3295CE00F002E10B9 /* HTTPClient.swift */; };
+		4A0129B8295CE01B002E10B9 /* PuppyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129B7295CE01B002E10B9 /* PuppyViewModel.swift */; };
+		4A0129BE295CE02E002E10B9 /* MainPuppyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129B9295CE02D002E10B9 /* MainPuppyContainer.swift */; };
+		4A0129BF295CE02E002E10B9 /* ImageLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129BA295CE02D002E10B9 /* ImageLoadView.swift */; };
+		4A0129C0295CE02E002E10B9 /* DetailPuppyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129BB295CE02D002E10B9 /* DetailPuppyView.swift */; };
+		4A0129C1295CE02E002E10B9 /* PuppyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129BC295CE02D002E10B9 /* PuppyGridView.swift */; };
+		4A0129C2295CE02E002E10B9 /* PuppyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129BD295CE02E002E10B9 /* PuppyView.swift */; };
+		4A0129C4295CE038002E10B9 /* PuppyResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0129C3295CE038002E10B9 /* PuppyResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		4A012995295CDF23002E10B9 /* PetsViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetsViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A012999295CDF23002E10B9 /* PetsViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewerUITests.swift; sourceTree = "<group>"; };
 		4A01299B295CDF23002E10B9 /* PetsViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A0129AD295CDFCF002E10B9 /* Font+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+ext.swift"; sourceTree = "<group>"; };
+		4A0129AE295CDFCF002E10B9 /* Image+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+ext.swift"; sourceTree = "<group>"; };
+		4A0129B1295CE00E002E10B9 /* PuppyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppyService.swift; sourceTree = "<group>"; };
+		4A0129B2295CE00E002E10B9 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4A0129B3295CE00F002E10B9 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		4A0129B7295CE01B002E10B9 /* PuppyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppyViewModel.swift; sourceTree = "<group>"; };
+		4A0129B9295CE02D002E10B9 /* MainPuppyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPuppyContainer.swift; sourceTree = "<group>"; };
+		4A0129BA295CE02D002E10B9 /* ImageLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadView.swift; sourceTree = "<group>"; };
+		4A0129BB295CE02D002E10B9 /* DetailPuppyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPuppyView.swift; sourceTree = "<group>"; };
+		4A0129BC295CE02D002E10B9 /* PuppyGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppyGridView.swift; sourceTree = "<group>"; };
+		4A0129BD295CE02E002E10B9 /* PuppyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppyView.swift; sourceTree = "<group>"; };
+		4A0129C3295CE038002E10B9 /* PuppyResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppyResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +120,11 @@
 			children = (
 				4A01297E295CDF1F002E10B9 /* PetsViewerApp.swift */,
 				4A012980295CDF1F002E10B9 /* ContentView.swift */,
+				4A0129A8295CDF7C002E10B9 /* Models */,
+				4A0129A9295CDF87002E10B9 /* Views */,
+				4A0129AA295CDF92002E10B9 /* ViewModels */,
+				4A0129AB295CDF9C002E10B9 /* Network */,
+				4A0129AC295CDFA8002E10B9 /* Extensions */,
 				4A012982295CDF22002E10B9 /* Assets.xcassets */,
 				4A012984295CDF22002E10B9 /* Preview Content */,
 			);
@@ -125,6 +154,53 @@
 				4A01299B295CDF23002E10B9 /* PetsViewerUITestsLaunchTests.swift */,
 			);
 			path = PetsViewerUITests;
+			sourceTree = "<group>";
+		};
+		4A0129A8295CDF7C002E10B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A0129C3295CE038002E10B9 /* PuppyResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A0129A9295CDF87002E10B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A0129BB295CE02D002E10B9 /* DetailPuppyView.swift */,
+				4A0129BA295CE02D002E10B9 /* ImageLoadView.swift */,
+				4A0129B9295CE02D002E10B9 /* MainPuppyContainer.swift */,
+				4A0129BC295CE02D002E10B9 /* PuppyGridView.swift */,
+				4A0129BD295CE02E002E10B9 /* PuppyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A0129AA295CDF92002E10B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4A0129B7295CE01B002E10B9 /* PuppyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4A0129AB295CDF9C002E10B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A0129B2295CE00E002E10B9 /* Endpoint.swift */,
+				4A0129B3295CE00F002E10B9 /* HTTPClient.swift */,
+				4A0129B1295CE00E002E10B9 /* PuppyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4A0129AC295CDFA8002E10B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A0129AD295CDFCF002E10B9 /* Font+ext.swift */,
+				4A0129AE295CDFCF002E10B9 /* Image+ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +334,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A012981295CDF1F002E10B9 /* ContentView.swift in Sources */,
+				4A0129C1295CE02E002E10B9 /* PuppyGridView.swift in Sources */,
+				4A0129B8295CE01B002E10B9 /* PuppyViewModel.swift in Sources */,
+				4A0129BF295CE02E002E10B9 /* ImageLoadView.swift in Sources */,
+				4A0129C0295CE02E002E10B9 /* DetailPuppyView.swift in Sources */,
+				4A0129B0295CDFCF002E10B9 /* Image+ext.swift in Sources */,
+				4A0129B4295CE00F002E10B9 /* PuppyService.swift in Sources */,
+				4A0129C2295CE02E002E10B9 /* PuppyView.swift in Sources */,
+				4A0129B6295CE00F002E10B9 /* HTTPClient.swift in Sources */,
 				4A01297F295CDF1F002E10B9 /* PetsViewerApp.swift in Sources */,
+				4A0129BE295CE02E002E10B9 /* MainPuppyContainer.swift in Sources */,
+				4A0129C4295CE038002E10B9 /* PuppyResponseModel.swift in Sources */,
+				4A0129B5295CE00F002E10B9 /* Endpoint.swift in Sources */,
+				4A0129AF295CDFCF002E10B9 /* Font+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
