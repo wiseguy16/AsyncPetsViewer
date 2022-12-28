@@ -15,6 +15,8 @@ struct PetService: HTTPClient {
       return makeUrlFrom(endpoint: PetService.puppyEndpoint)
     case .cats:
       return makeUrlFrom(endpoint: PetService.catsEndpoint)
+    case .hampster:
+      return makeUrlFrom(endpoint: PetService.hampsterEndpoint)
     }
   }
   
@@ -34,6 +36,15 @@ struct PetService: HTTPClient {
     path: "/services/feeds/photos_public.gne",
     queryItems:
       ["tags": "cats", "format": "json",
+       "nojsoncallback": "1", "lang": "en-us"]
+  )
+  
+  static private let hampsterEndpoint = Endpoint(
+    scheme: "https",
+    host: "api.flickr.com",
+    path: "/services/feeds/photos_public.gne",
+    queryItems:
+      ["tags": "hampster", "format": "json",
        "nojsoncallback": "1", "lang": "en-us"]
   )
   

@@ -8,23 +8,19 @@
 import SwiftUI
 
 let imageCache = NSCache<AnyObject, AnyObject>()
-//class Cacher: ObservableObject {
-//  @Published var imageCache = NSCache<AnyObject, AnyObject>()
-//
-//}
+
 struct PetsGridView: View {
-  @EnvironmentObject var puppyEnv: PetViewModel
+  @EnvironmentObject var petEnv: PetViewModel
   @State var selected: Item?
- // private let cacher = Cacher()
   private let columns = [GridItem(.adaptive(minimum: 150, maximum: 350))]
   
   var body: some View {
     ScrollView(.vertical) {
       LazyVGrid(columns: columns) {
-        ForEach(puppyEnv.puppyitems) { item in
+        ForEach(petEnv.petItems) { item in
           PetView(item: item)
             .onTapGesture {
-              puppyEnv.path.append(item)
+              petEnv.path.append(item)
             }
         }
       }
@@ -33,8 +29,12 @@ struct PetsGridView: View {
         DetailPetView(item: item)
       }
     }
+    .onChange(of: petEnv.route, perform: { _ in
+      petEnv.hasFetchedOnce.toggle()
+      petEnv.fetchPets()
+    })
     .onAppear {
-      puppyEnv.fetchPuppies()
+      petEnv.fetchPets()
     }
   }
   

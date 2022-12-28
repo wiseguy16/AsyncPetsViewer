@@ -16,9 +16,10 @@ struct Endpoint {
     let queryItems: [String: String]?
 }
 
-public enum Route {
+public enum Route: String, CaseIterable {
   case puppy
   case cats
+  case hampster
 }
 
 // MARK: - RequestError

@@ -12,7 +12,8 @@ class PetViewModel: ObservableObject {
   
   // MARK: - properties
   @Published var path = NavigationPath()
-  @Published var puppyitems: [Item] = []
+  @Published var petItems: [Item] = []
+  @Published var route = Route.puppy
   @Published var hasFetchedOnce = false
   private let apiService: HTTPClient
   
@@ -22,14 +23,14 @@ class PetViewModel: ObservableObject {
   }
   
   // MARK: - fetchPuppies
-  func fetchPuppies() {
+  func fetchPets() {
     guard !hasFetchedOnce else { return }
     Task {
       do {
-        guard let url = apiService.makeUrlSource(for: .puppy) else { return }
+        guard let url = apiService.makeUrlSource(for: self.route) else { return }
         let result = try await apiService.sendRequest(for: url, responseModel: PetResponseModel.self)
         await MainActor.run { [weak self] in
-          self?.puppyitems = result.items
+          self?.petItems = result.items
           self?.hasFetchedOnce.toggle()
         }
       } catch {

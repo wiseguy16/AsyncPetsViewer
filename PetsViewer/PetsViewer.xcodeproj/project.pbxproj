@@ -167,11 +167,11 @@
 		4A0129A9295CDF87002E10B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4A0129BB295CE02D002E10B9 /* DetailPetView.swift */,
-				4A0129BA295CE02D002E10B9 /* ImageLoadView.swift */,
 				4A0129B9295CE02D002E10B9 /* MainPetsContainer.swift */,
 				4A0129BC295CE02D002E10B9 /* PetsGridView.swift */,
 				4A0129BD295CE02E002E10B9 /* PetView.swift */,
+				4A0129BB295CE02D002E10B9 /* DetailPetView.swift */,
+				4A0129BA295CE02D002E10B9 /* ImageLoadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

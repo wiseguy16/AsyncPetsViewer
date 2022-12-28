@@ -13,6 +13,13 @@ struct MainPetsContainer: View {
   var body: some View {
     NavigationStack(path: $petEnv.path) {
       VStack {
+        Picker("", selection: $petEnv.route) {
+          ForEach(Route.allCases, id: \.self) { route in
+            Text(route.rawValue)
+          }
+        }
+        .pickerStyle(.segmented)
+        .padding(.horizontal)
         PetsGridView()
       }
       .navigationTitle("PetsViewer")
