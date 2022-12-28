@@ -1,5 +1,5 @@
 //
-//  PuppyResponseModel.swift
+//  PetResponseModel.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/16/22.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - PuppyResponseModel
-struct PuppyResponseModel: Codable {
+// MARK: - PetResponseModel
+struct PetResponseModel: Codable {
   let title: String
   let link: String
   let description: String

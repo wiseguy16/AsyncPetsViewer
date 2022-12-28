@@ -11,25 +11,11 @@ import Foundation
 protocol HTTPClient {
   func sendRequest<T: Decodable>(for url: URL, responseModel: T.Type) async throws -> T
   func makeUrlSource(for route: Route) -> URL?
- // var source: Source { get set }
 }
 
 extension HTTPClient {
   // MARK: - sendRequest (default)
   func sendRequest<T: Decodable>(for url: URL, responseModel: T.Type) async throws -> T {
-//    var urlSource: URL?
-//    
-//    switch source {
-//    case .endpoint(let type):
-//      urlSource = makeUrlFrom(endpointType: type)
-//    case .url(let url):
-//      urlSource = url
-//    }
-    
-    
-//    guard let url = urlSource else {
-//      throw RequestError.invalidURL
-//    }
     
     let (data, response) = try await URLSession.shared.data(from: url)
   

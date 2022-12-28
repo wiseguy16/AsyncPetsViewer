@@ -16,12 +16,6 @@ struct Endpoint {
     let queryItems: [String: String]?
 }
 
-//// MARK: - Source
-//enum Source {
-//  case endpoint(EndpointType)
-//  case url(URL)
-//}
-
 public enum Route {
   case puppy
   case cats

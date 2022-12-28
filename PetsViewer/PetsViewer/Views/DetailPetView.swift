@@ -1,5 +1,5 @@
 //
-//  DetailPuppyView.swift
+//  DetailPetView.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/16/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailPuppyView: View {
+struct DetailPetView: View {
   let item: Item
   private var share: URL {
     return URL(string: item.media.m) ?? URL(string: "https://www.apple.com")!
@@ -27,7 +27,7 @@ struct DetailPuppyView: View {
       Spacer()
     }
     .padding()
-    .navigationBarTitle("Puppy Details")
+    .navigationBarTitle("Pet Details")
     .navigationBarTitleDisplayMode(.inline)
     .toolbar(content: {
       ToolbarItem(placement: .navigationBarTrailing) {
@@ -44,13 +44,13 @@ struct DetailPuppyView: View {
         ShareLink(item: share)
       }
     })
-    .alert("This puppy has been saved to favorites", isPresented: $showingOptions, actions: {})
+    .alert("This pet has been saved to favorites", isPresented: $showingOptions, actions: {})
   }
   
 }
 
 struct DetailPuppyView_Previews: PreviewProvider {
   static var previews: some View {
-    DetailPuppyView(item: Item.mock)
+    DetailPetView(item: Item.mock)
   }
 }

@@ -1,5 +1,5 @@
 //
-//  PuppyGridView.swift
+//  PetsGridView.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/16/22.
@@ -12,8 +12,8 @@ let imageCache = NSCache<AnyObject, AnyObject>()
 //  @Published var imageCache = NSCache<AnyObject, AnyObject>()
 //
 //}
-struct PuppyGridView: View {
-  @EnvironmentObject var puppyEnv: PuppyViewModel
+struct PetsGridView: View {
+  @EnvironmentObject var puppyEnv: PetViewModel
   @State var selected: Item?
  // private let cacher = Cacher()
   private let columns = [GridItem(.adaptive(minimum: 150, maximum: 350))]
@@ -22,7 +22,7 @@ struct PuppyGridView: View {
     ScrollView(.vertical) {
       LazyVGrid(columns: columns) {
         ForEach(puppyEnv.puppyitems) { item in
-          PuppyView(item: item)
+          PetView(item: item)
             .onTapGesture {
               puppyEnv.path.append(item)
             }
@@ -30,7 +30,7 @@ struct PuppyGridView: View {
       }
       .padding()
       .navigationDestination(for: Item.self) { item in
-        DetailPuppyView(item: item)
+        DetailPetView(item: item)
       }
     }
     .onAppear {
@@ -45,6 +45,6 @@ struct PuppyGridView: View {
 
 struct PuppyGridView_Previews: PreviewProvider {
   static var previews: some View {
-    PuppyGridView()
+    PetsGridView()
   }
 }

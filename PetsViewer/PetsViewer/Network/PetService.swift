@@ -8,17 +8,15 @@
 import Foundation
 
 // MARK: - PuppyService
-struct PuppyService: HTTPClient {
+struct PetService: HTTPClient {
   func makeUrlSource(for route: Route) -> URL? {
     switch route {
     case .puppy:
-      return makeUrlFrom(endpoint: PuppyService.puppyEndpoint)
+      return makeUrlFrom(endpoint: PetService.puppyEndpoint)
     case .cats:
-      return makeUrlFrom(endpoint: PuppyService.catsEndpoint)
+      return makeUrlFrom(endpoint: PetService.catsEndpoint)
     }
   }
-  
-//  var source = Source.endpoint(puppyEndpoint as! EndpointType)
   
   // MARK: - endpoints
   static private let puppyEndpoint = Endpoint(

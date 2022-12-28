@@ -1,5 +1,5 @@
 //
-//  MainPuppyContainer.swift
+//  MainPetsContainer.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/16/22.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct MainPuppyContainer: View {  
-  @EnvironmentObject var puppyEnv: PuppyViewModel
+struct MainPetsContainer: View {  
+  @EnvironmentObject var petEnv: PetViewModel
   
   var body: some View {
-    NavigationStack(path: $puppyEnv.path) {
+    NavigationStack(path: $petEnv.path) {
       VStack {
-        PuppyGridView()
+        PetsGridView()
       }
       .navigationTitle("PetsViewer")
     }

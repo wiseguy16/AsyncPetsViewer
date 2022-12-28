@@ -1,5 +1,5 @@
 //
-//  PuppyViewModel.swift
+//  PetViewModel.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/16/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class PuppyViewModel: ObservableObject {
+class PetViewModel: ObservableObject {
   
   // MARK: - properties
   @Published var path = NavigationPath()
@@ -27,7 +27,7 @@ class PuppyViewModel: ObservableObject {
     Task {
       do {
         guard let url = apiService.makeUrlSource(for: .puppy) else { return }
-        let result = try await apiService.sendRequest(for: url, responseModel: PuppyResponseModel.self)
+        let result = try await apiService.sendRequest(for: url, responseModel: PetResponseModel.self)
         await MainActor.run { [weak self] in
           self?.puppyitems = result.items
           self?.hasFetchedOnce.toggle()

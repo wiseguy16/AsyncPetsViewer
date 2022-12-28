@@ -1,5 +1,5 @@
 //
-//  PuppyView.swift
+//  PetView.swift
 //  PetsViewer
 //
 //  Created by Gregory Weiss on 12/17/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PuppyView: View {
+struct PetView: View {
 
   let item: Item
   

@@ -11,7 +11,7 @@ import SwiftUI
 struct PetsViewerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          MainPetsContainer().environmentObject(PetViewModel(apiService: PetService()))
         }
     }
 }
